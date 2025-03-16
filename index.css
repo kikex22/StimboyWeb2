@@ -1,0 +1,243 @@
+body {
+    font-family: Verdana, sans-serif;
+   
+    background-color: #017fd3;
+   
+}
+
+html, body {
+    overflow-x: hidden; /* Oculta el scroll horizontal */
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+
+
+#Inicio{
+    background-color: #017fd3; /* Azul */
+    color: rgb(255, 255, 255);
+   
+    text-align: center; /* Centramos el contenido */
+    margin:0;
+    width:100vw;
+    
+    
+}
+
+.Rocky2 {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    z-index: -1;
+}
+
+.Rocky2 img {
+    width: 100%;
+    height: 100%;
+   
+    object-fit: cover;
+}
+
+
+
+.custom-header {
+  position:absolute;
+    color: #017fd3;
+    font-style: bold;
+    padding: 2rem 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+   
+}
+
+
+
+
+
+
+.navbar .nav-link {
+    color: #017fd3;
+    font-weight: bold;
+    white-space: nowrap;
+    
+}
+
+
+
+
+.navbar .nav-link:hover {
+    color: #800000;
+    transform: scale(1.2);
+   
+}
+
+
+
+
+#Servicios {
+    background-color: #017fd3; /* Azul */
+    color: rgb(255, 255, 255);
+    padding: 3rem 0; /* Espaciado interno */
+    text-align: center; /* Centramos el contenido */
+    
+    
+}
+
+#Stimboy{
+   
+        background-color: #017fd3; /* Azul */
+        color: rgb(255, 255, 255);
+        padding: 3rem 0; /* Espaciado interno */
+        text-align: center; /* Centramos el contenido */
+        
+        
+    
+    
+}
+
+.Acerca-deheader{
+    color: rgb(247, 250, 250);
+}
+.Acerca-text{
+    color:#ffffff
+}
+
+
+.fade-in-scroll {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+  
+  /* Cuando la clase visible es añadida, animamos el cambio */
+.fade-in-scroll.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.servicio {
+    background-color: #f8f5f5;
+    border: 1px solid #ddd;
+    padding: 1.5rem;
+    border-radius: 8px;
+    
+    
+}
+
+.servicio:hover {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    transform: translateY(-5px);
+}
+
+.servicio h3 {
+    margin-top: 0;
+    color: #017fd3;
+}
+
+.servicio p {
+    margin: 0.5rem 0;
+    color: #555;
+}
+
+.servicio strong {
+    color: #333;
+}
+
+.Acerca-de{
+    color: #ffffff ;
+}
+
+.gocho1{
+    border: 5px solid #08a0e7; /* Borde sólido de 5px de color gris oscuro */
+    padding: 10px; /* Espaciado interno alrededor de la imagen */
+    background-color: #f8f8f8; /* Fondo claro para destacar el borde */
+    border-radius: 20px; /* Bordes redondeados */
+}
+
+@media (max-width: 799px) {
+  
+    #Inicio{
+        width: 100%;
+        margin:0;
+    }
+
+    #Servicios {
+        grid-template-columns: 1fr;
+        padding: 1.5rem;
+    }
+
+    #Stimboy{
+        padding:1.5rem;
+    }
+    
+   
+
+   .Rocky2 {
+    height: 59vh; /* Ajusta la altura del contenedor */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  
+
+    #contacto {
+        grid-template-columns: 1fr;
+    }
+
+    .custom-header h1 {
+        font-size: 1.5rem;
+    }
+
+    .custom-login-link {
+        font-size: 0.9rem;
+        padding: 8px 16px;
+    }
+
+    .video video{
+        width: 100%;
+        text-align: center; /* Centra el video */
+        padding: 10px;
+    }
+}
+
+/*Css de fotos y texto en seccion Acerca*/
+.fade-in-scroll img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.5s ease-in-out;
+    border: 5px solid white; /* Borde blanco */
+    outline: 3px solid #08a0e7; /* Contorno azul */
+}
+  
+  /* Efecto hover en las imágenes */
+.fade-in-scroll img:hover {
+    transform: scale(1.05);
+}
+
+.Acercade{
+    color:#ffffff
+}
+
+#Contacto {
+    background-color: #08a0e7; /* Azul */
+    color: rgb(255, 255, 255);
+   
+    text-align: center; /* Centramos el contenido */
+    
+    display: flex; /* Usamos flexbox para centrar el contenido */
+    flex-direction: column; /* Alinea el contenido en columna */
+    justify-content: center; /* Centra el contenido verticalmente */
+    align-items: center; /* Centra el contenido horizontalmente */
+    box-sizing: border-box; /* Incluye padding y borde en el tamaño total */
+    padding: 20px; /* Espaciado interno (opcional) */
+    margin: 0; /* Elimina márgenes por defecto */
+    width:200vw;
+    min-width: 100%; 
+}
